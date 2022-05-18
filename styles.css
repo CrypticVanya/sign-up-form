@@ -2,6 +2,7 @@
     --logo-color: green;
     --info-color: rgba(4);
     --opacity-color: rgba(233, 222, 222, 0.3);
+    --opacity-blue: rgba(1, 148, 247, 0.2);
 }
 
 body {
@@ -18,10 +19,12 @@ body {
     font-size: 6.5rem;
     max-height: 125px;
     margin-top: 150px;
-    background-color: var(--opacity-color);
+    background-color: var(--opacity-blue);
 }
 
-a {color: white;} .photo-credit {
+a {color: rgba(1, 148, 247, 0.589);} a:hover {color: black;}
+
+.photo-credit {
     flex: 1;
     display: flex;
     align-items:flex-end;
@@ -82,7 +85,11 @@ form {
     column-count: 2;
 }
 
-input{height: 25px;} label {
+input{height: 25px;} input:focus{ 
+    background-color: var(--opacity-blue);
+}
+
+label {
     margin-top: 25px;
 }
 
